@@ -1,3 +1,12 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
 # Prompt Setting
 [[ -f "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
