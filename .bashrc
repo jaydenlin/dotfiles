@@ -29,3 +29,13 @@ alias tls="tmux ls"
 alias ta="tmux a -t"
 alias tk="tmux kill-session -t"
 alias tsf="tmux source-file ~/.tmux.conf"
+
+##git
+alias g="git"
+alias gs="git status"
+alias ga="git add"
+alias gd="git diff"
+alias gdw="git diff --word-diff"
+alias gds="git diff --staged"
+alias gap="git add -p"
+alias gcm="git commit -m"
