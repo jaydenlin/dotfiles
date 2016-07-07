@@ -45,3 +45,9 @@ alias gdw="git diff --word-diff"
 alias gds="git diff --staged"
 alias gap="git add -p"
 alias gcm="git commit -m"
+
+##Yahoo!
+alias cdy="cd /home/y/"
+alias cdyl="cd /home/y/logs/"
+alias cdys="cd /home/y/share/"
+alias cdyh="cd /home/y/shares/htdocs/"
