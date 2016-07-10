@@ -30,6 +30,7 @@ alias ll="ls -lh"
 alias la="ll -A"
 alias hi="history"
 alias hg="history | grep"
+alias grep="grep --color=auto"
 
 ## tmux
 alias tm="tmux"
