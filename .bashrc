@@ -10,6 +10,9 @@ fi
 # Prompt Setting
 [[ -f "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
+#Directory Change
+source .acd_func.sh
+
 # Perl Fix
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -45,9 +48,12 @@ alias gdw="git diff --word-diff"
 alias gds="git diff --staged"
 alias gap="git add -p"
 alias gcm="git commit -m"
+alias grv="git remote -v"
 
 ##Yahoo!
 alias cdy="cd /home/y/"
 alias cdyl="cd /home/y/logs/"
 alias cdys="cd /home/y/share/"
 alias cdyh="cd /home/y/share/htdocs/"
+
+
