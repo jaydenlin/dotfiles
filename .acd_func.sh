@@ -60,5 +60,5 @@ alias cd=cd_func
 
 if [[ $BASH_VERSION > "2.05a" ]]; then
   # ctrl+w shows the menu
-  bind -x "\"\C-a\":cd_func -- ;"
+  bind -x "\"\C-w\":cd_func -- ;"
 fi
