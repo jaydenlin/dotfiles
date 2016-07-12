@@ -31,6 +31,7 @@ alias la="ll -A"
 alias hi="history"
 alias hg="history | grep"
 alias grep="grep --color=auto"
+alias c="cd --" #start acd_func
 
 ## tmux
 alias tm="tmux"
