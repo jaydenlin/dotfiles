@@ -21,7 +21,7 @@ git pull origin master && source install.sh
 ## Hotkeys
 ### vim
 `Ctrl+p`: open ctrlp menu and `esc` to close it.  
-`Ctrl+f`: open buffer and `Ctrl+@` to delete select buffer  
+`Ctrl+f`: open buffer and `Ctrl+@` to delete selected buffer  
 `Ctrl+b`: toggle nerdtree menu  
 `Ctrl+g`: toogle gitter  
 `Ctrl+d`: find next same string  
