@@ -39,5 +39,5 @@ git pull origin master && source install.sh
 `Ctrl+o+d`: quit the session  
 `Ctrl+d`: quit current tab  
 `Ctrl+o+c`: create new tab  
-`Ctrl+o+,`: rename the tab
+`Ctrl+o+,`: rename the tab  
 `shift+left`, `shift+right`: switch between tabs
