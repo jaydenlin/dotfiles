@@ -29,6 +29,7 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 " CtrlP
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/node_modules/*
 nnoremap <C-t> :CtrlPTag<cr>
+map <C-f> :CtrlPBuffer<CR>
 function! SetupCtrlP()
     if exists("g:loaded_ctrlp") && g:loaded_ctrlp
         augroup CtrlPExtension
