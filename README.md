@@ -15,7 +15,7 @@ vim
 
 ## Update
 ```
-git pull origin master && cd dotfiles && source install.sh
+git pull origin master && source install.sh
 ```
 
 ## Hotkeys
