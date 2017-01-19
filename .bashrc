@@ -58,4 +58,8 @@ alias cdyl="cd /home/y/logs/"
 alias cdys="cd /home/y/share/"
 alias cdyh="cd /home/y/share/htdocs/"
 
-
+### git hook
+git --version 2>&1 >/dev/null
+GIT_IS_AVAILABLE=$?
+[[ GIT_IS_AVAILABLE -eq 0 ]] && [[ -d "$HOME/.githook" ]] && git config ---
+global core.hooksPath $HOME/.githook
