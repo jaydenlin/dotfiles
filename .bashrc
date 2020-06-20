@@ -33,6 +33,26 @@ alias hg="history | grep"
 alias grep="grep --color=auto"
 alias c="cd --" #start acd_func
 
+#pipe
+prepend () {
+    read -d "" buffer
+# consume any remaining elements — a small timeout ensures that
+# rapidly fired events are batched together
+   while read -d "" -t 1 line; do buffer="$buffer\n$line"; done
+   for i in $buffer; do
+       echo $1$i;
+   done
+}
+append() {
+   read -d "" buffer
+# consume any remaining elements — a small timeout ensures that
+# rapidly fired events are batched together
+   while read -d "" -t 1 line; do buffer="$buffer\n$line"; done
+   for i in $buffer; do
+       echo $i$1;
+   done
+}
+
 ## tmux
 alias tm="tmux"
 alias tn="tmux new -s"
@@ -52,14 +72,10 @@ alias gap="git add -p"
 alias gcm="git commit -m"
 alias grv="git remote -v"
 
+
 ##Yahoo!
 alias cdy="cd /home/y/"
 alias cdyl="cd /home/y/logs/"
 alias cdys="cd /home/y/share/"
 alias cdyh="cd /home/y/share/htdocs/"
 
-### git hook
-git --version 2>&1 >/dev/null
-GIT_IS_AVAILABLE=$?
-[[ GIT_IS_AVAILABLE -eq 0 ]] && [[ -d "$HOME/.githook" ]] && git config ---
-global core.hooksPath $HOME/.githook
