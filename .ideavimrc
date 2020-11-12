@@ -19,35 +19,36 @@ vmap p (
 vmap o "
 nmap cao ca"
 nmap cio ci"
-nmap ciio 0ci"
+nmap ciio ?"<CR>ci"
 nmap cfo cf"
 nmap cto ct"
-nmap cip ci(
-nmap ciip 0f(ci(
-nmap cap ca(
-nmap ctp ct)
-nmap dap da(
-nmap dip di(
-nmap diip 0f(di(
-nmap dtp dt)
+nmap cip f(ci(
+nmap ciip ?(<CR>ci(
+nmap cap f(ca(
+nmap ctp f(ct(
+nmap dap f(da(
+nmap dip f(di(
+nmap diip ?(<CR>di(
+nmap dtp f(dt(
 nmap dao da"
 nmap dio di"
 nmap dto dt"
-nmap vip vi(
-nmap viip 0f(vi(
+nmap vip f(vi(
+nmap viip ?(<CR>vi(
 nmap vio vi"
-nmap viio 0vi"
+nmap viio ?"<CR>vi"
 nmap vao va"
-nmap vap va(
-nmap vtp vt)
+nmap vap f(va(
+nmap vtp f(vt(
 nmap ,p "0p
 nmap ,P "0P
 imap z,p <Esc>"0pa
 imap z,P <Esc>"0Pa
-nmap zi /(<CR>l
-imap zi <Esc>/(<CR>l
-nmap zo h?(<CR>l
-imap zo <Esc>h?(<CR>l
+nmap zl /(<CR>l
+imap zl <Esc>/(<CR>l
+nmap zh h?(<CR>l
+imap zh <Esc>h?(<CR>l
+
 :nmap zb /{<CR>l
 :imap zb <Esc>/{<CR>l
 :nmap ze /}<CR>l
@@ -66,12 +67,12 @@ imap zo <Esc>h?(<CR>l
 :imap zz <Esc>
 :vmap zz <Esc>
 :nmap <BS> a<BS>
-:nmap zh ^
-":nmap hh ^
-:imap zh <Esc>^i
-:nmap zl $
-":nmap ll $
-:imap zl <End>
+":nmap zh ^
+:nmap hh ^
+":imap zh <Esc>^i
+":nmap zl $
+:nmap ll $
+":imap zl <End>
 :nmap hc ^C
 :nmap zcw ciw
 :vmap zcw <Esc>ciw
@@ -87,10 +88,10 @@ nmap <F1> mby?@Test<CR>`bp?void<CR>w
 imap <F2> <Esc>mby?def<CR>`bp?def<CR>f"w
 nmap <F2> mby?def<CR>`bp?def<CR>f"w
 
-nmap zk :action Back<CR>
-imap zk <Esc>:action Back<CR>
-nmap zj :action Forward<CR>
-imap zj <Esc>:action Forward<CR>
+nmap zj :action Back<CR>
+imap zj <Esc>:action Back<CR>
+nmap zk :action Forward<CR>
+imap zk <Esc>:action Forward<CR>
 nmap zn :action GotoNextError<CR>
 imap zn <Esc>:action GotoNextError<CR>
 nmap zf :action GotoDeclaration<CR>
