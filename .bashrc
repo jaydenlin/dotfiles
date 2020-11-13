@@ -11,7 +11,7 @@ fi
 [[ -f "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
 #Directory Change
-source .acd_func.sh
+#source .acd_func.sh
 
 # Perl Fix
 export LANGUAGE=en_US.UTF-8
