@@ -9,8 +9,8 @@ nmap <S-h> b
 vmap <S-h> b
 nmap <S-l> w
 vmap <S-l> w
-nmap z; $a;<Esc>
-imap z; <Esc>$a;
+nmap z; mx$a;<Esc>`x<Esc>
+imap z; <Esc>mx$a;<Esc>`x
 nmap z, mx$xa,<Esc>`x<Esc>
 imap z, <Esc>mx$xa,<Esc>`x
 vmap i <Esc>i
@@ -49,6 +49,12 @@ imap zl <Esc>/(<CR>l
 nmap zh h?(<CR>l
 imap zh <Esc>h?(<CR>l
 
+"warp
+nmap zso csw"
+imap <Esc>zso csw"
+nmap zst csw>
+imap <Esc>zst csw>
+
 :nmap zb /{<CR>l
 :imap zb <Esc>/{<CR>l
 :nmap ze /}<CR>l
@@ -63,21 +69,21 @@ imap zh <Esc>h?(<CR>l
 :nmap z' vi'
 :nmap zxx ci]
 :imap jj <Esc>
-:imap jk <Esc>
+":imap jk <Esc>
 :imap zz <Esc>
 :vmap zz <Esc>
 :nmap <BS> a<BS>
 ":nmap zh ^
-:nmap hh ^
+":nmap hh ^
 ":imap zh <Esc>^i
 ":nmap zl $
-:nmap ll $
+":nmap ll $
 ":imap zl <End>
 :nmap hc ^C
 :nmap zcw ciw
 :vmap zcw <Esc>ciw
-:imap zd <Esc>ddko
-:nmap zd ddko
+:imap zd <Esc>ddjo
+:nmap zd ddjo
 nmap qq ZQ
 nmap zq :wq<CR>
 :nmap <BS> a<BS>
@@ -172,3 +178,5 @@ map <C-K> <C-B>
 
 :nnoremap j k
 :nnoremap k j
+:vnoremap j k
+:vnoremap k j
