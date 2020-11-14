@@ -3,6 +3,7 @@
     "window.zoomLevel": 2,
     "tabnine.experimentalAutoImports": true,
     "editor.largeFileOptimizations": false,
+    "editor.lineNumbers": "relative",
     "vim.useCtrlKeys": false,
     "vim.normalModeKeyBindings": [
         
@@ -35,6 +36,26 @@
         },
         {
             "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k",
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j",
+            ]
+        },
+        {
+            "before": [
                 "j",
             ],
             "after": [
@@ -51,6 +72,26 @@
         } 
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k",
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j",
+            ]
+        },
         {
             "before": ["z", "f"],
             "commands": [
@@ -146,10 +187,66 @@
             ],
             "after": [
                 "?",
-                "{",
+                "}",
                 "<CR>",
                 "c",
                 "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "q"
+            ],
+            "after": [
+                "c",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "u"
+            ],
+            "after": [
+                "f",
+                "]",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "u"
+            ],
+            "after": [
+                "?",
+                "]",
+                "<CR>",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "b"
+            ],
+            "after": [
+                "f",
+                "}",
+                "c",
+                "a",
                 "{"
             ]
         },
@@ -213,7 +310,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "c",
                 "i",
                 "("
@@ -228,7 +325,7 @@
             ],
             "after": [
                 "?",
-                "(",
+                ")",
                 "<CR>",
                 "c",
                 "i",
@@ -681,9 +778,9 @@
     "vim.easymotion": true,
     "vim.surround": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#B48EAD",
-        "statusBar.noFolderBackground": "#B48EAD",
-        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
         "statusBar.foreground": "#434C5E"
     }
 }

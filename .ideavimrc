@@ -1,6 +1,8 @@
 :set surround
 :set multiple-cursors
 :set easymotion
+:set relativenumber
+:set number
 ":set clipboard+=unnamed
 :set nofoldenable    
 "Move
