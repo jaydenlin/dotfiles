@@ -131,7 +131,7 @@
             ],
             "after": [
                 "f",
-                "{",
+                "}",
                 "c",
                 "i",
                 "{"
@@ -243,7 +243,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "c",
                 "a",
                 "("
@@ -257,7 +257,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "c",
                 "t",
                 "("
@@ -271,7 +271,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "d",
                 "a",
                 "("
@@ -285,7 +285,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "d",
                 "i",
                 "("
@@ -300,7 +300,7 @@
             ],
             "after": [
                 "?",
-                "(",
+                ")",
                 "<CR",
                 "d",
                 "i",
@@ -315,7 +315,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "d",
                 "t",
                 "("
@@ -365,7 +365,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "v",
                 "i",
                 "("
@@ -380,7 +380,7 @@
             ],
             "after": [
                 "?",
-                "(",
+                ")",
                 "<CR>",
                 "v",
                 "i",
@@ -437,7 +437,7 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "v",
                 "a",
                 "("
@@ -451,24 +451,10 @@
             ],
             "after": [
                 "f",
-                "(",
+                ")",
                 "v",
                 "t",
                 "("
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                " "
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "leader",
-                "b",
-                "d",
-                "w"
             ]
         },
         {
@@ -494,73 +480,6 @@
                 "(",
                 "<CR>",
                 "l"
-            ]
-        },
-       
-        {
-            "before": [
-                "z",
-                ","
-            ],
-            "after": [
-                "v",
-                "i",
-                ")"
-            ]
-        },
-        {
-            "before": [
-                "z",
-                "."
-            ],
-            "after": [
-                "v",
-                "i",
-                "}"
-            ]
-        },
-        {
-            "before": [
-                "z",
-                "'"
-            ],
-            "after": [
-                "v",
-                "i",
-                "'"
-            ]
-        },
-        {
-            "before": [
-                "z",
-                ">"
-            ],
-            "after": [
-                "v",
-                "i",
-                "t"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "c"
-            ],
-            "after": [
-                "c",
-                "i",
-                "\""
-            ]
-        },
-        {
-            "before": [
-                "z",
-                "\""
-            ],
-            "after": [
-                "v",
-                "i",
-                "\""
             ]
         },
         {
@@ -762,9 +681,9 @@
     "vim.easymotion": true,
     "vim.surround": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#8FBCBB",
-        "statusBar.noFolderBackground": "#8FBCBB",
-        "statusBar.debuggingBackground": "#8FBCBB",
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
         "statusBar.foreground": "#434C5E"
     }
 }
