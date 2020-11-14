@@ -1,0 +1,638 @@
+{
+
+    "vim.useCtrlKeys": false,
+    "vim.normalModeKeyBindings": [
+        
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "b",
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "w",
+            ]
+        },
+        {
+            "before": [
+                "j",
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "befo. e": [
+                "k"
+            ],
+            "after": [
+                "j"
+            ]
+        } 
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["space"],
+            "after": ["leader", "leader", "2", "s"]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "b",
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "w",
+            ]
+        },
+        {
+            "before": [
+                "j",
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "o"
+            ],
+            "after": [
+                "c",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "o"
+            ],
+            "after": [
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "o"
+            ],
+            "after": [
+                "?",
+                "\"",
+                "<CR>",
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "f",
+                "o"
+            ],
+            "after": [
+                "c",
+                "f",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "t",
+                "o"
+            ],
+            "after": [
+                "c",
+                "t",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "c",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "?",
+                "(",
+                "<CR>",
+                "c",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "c",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "t",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "c",
+                "t",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "d",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "d",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "?",
+                "(",
+                "<CR",
+                "d",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "t",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "d",
+                "t",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "o"
+            ],
+            "after": [
+                "d",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "o"
+            ],
+            "after": [
+                "d",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "t",
+                "o"
+            ],
+            "after": [
+                "d",
+                "t",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "v",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "?",
+                "(",
+                "<CR>",
+                "v",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "o"
+            ],
+            "after": [
+                "f",
+                "\"",
+                "v",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "o"
+            ],
+            "after": [
+                "?",
+                "\"",
+                "<CR>",
+                "v",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "o"
+            ],
+            "after": [
+                "v",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "v",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "t",
+                "p"
+            ],
+            "after": [
+                "f",
+                "(",
+                "v",
+                "t",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                " "
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "l"
+            ],
+            "after": [
+                "/",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "h"
+            ],
+            "after": [
+                "h",
+                "?",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+       
+        {
+            "before": [
+                "z",
+                ","
+            ],
+            "after": [
+                "v",
+                "i",
+                ")"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "."
+            ],
+            "after": [
+                "v",
+                "i",
+                "}"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "'"
+            ],
+            "after": [
+                "v",
+                "i",
+                "'"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ">"
+            ],
+            "after": [
+                "v",
+                "i",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "after": [
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "\""
+            ],
+            "after": [
+                "v",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                ",",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "0",
+                "p"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ","
+            ],
+            "after": [
+                "m",
+                "x",
+                "$",
+                "x",
+                "a",
+                ",",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ";"
+            ],
+            "after": [
+                "m",
+                "x",
+                "$",
+                "a",
+                ";",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "z",
+                "z"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "l"
+            ],
+            "after": [
+                "<Esc>",
+                "/",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "h"
+            ],
+            "after": [
+                "<Esc>",
+                "h",
+                "?",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ","
+            ],
+            "after": [
+                "<Esc>",
+                "m",
+                "x",
+                "$",
+                "x",
+                "a",
+                ",",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ";"
+            ],
+            "after": [
+                "<Esc>",
+                "m",
+                "x",
+                "$",
+                "a",
+                ";",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        }
+        
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.easymotion": true,
+    "vim.surround": true,:
+
+}
