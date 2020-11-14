@@ -1,10 +1,22 @@
 {
-
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 2,
+    "tabnine.experimentalAutoImports": true,
+    "editor.largeFileOptimizations": false,
     "vim.useCtrlKeys": false,
     "vim.normalModeKeyBindings": [
         
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "z",
+                "z"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
         {
             "before": [
                 "H"
@@ -39,6 +51,30 @@
         } 
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["z", "f"],
+            "commands": [
+                "editor.action.revealDefinition"
+            ] 
+        },
+        {
+            "before": ["z", "n"],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ] 
+        },
+        {
+            "before": ["z", "k"],
+            "commands": [
+                "workbench.action.navigateForward"
+            ] 
+        },
+        {
+            "before": ["z", "j"],
+            "commands": [
+                "workbench.action.navigateBack"
+            ] 
+        },
         {
             "before": ["space"],
             "after": ["leader", "leader", "2", "s"]
@@ -85,6 +121,36 @@
                 "c",
                 "a",
                 "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "b"
+            ],
+            "after": [
+                "f",
+                "{",
+                "c",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "b"
+            ],
+            "after": [
+                "?",
+                "{",
+                "<CR>",
+                "c",
+                "i",
+                "{"
             ]
         },
         {
@@ -543,8 +609,57 @@
                 "<Esc>"
             ]
         },
+        {
+            "before": [
+                "z",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d",
+                "k",
+                "o"
+            ]
+        },
     ],
     "vim.insertModeKeyBindings": [
+
+        {
+            "before": ["z", "f"],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ] 
+        },
+        {
+            "before": ["z", "n"],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ] 
+        },
+        {
+            "before": ["z", "k"],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ] 
+        },
+        {
+            "before": ["z", "j"],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ] 
+        },
         {
             "before": [
                 "z",
@@ -617,8 +732,20 @@
                 "x",
                 "<Esc>"
             ]
+        },
+        {
+            "before": [
+                "z",
+                "d"
+            ],
+            "after": [
+                "<Esc>",
+                "d",
+                "d",
+                "k",
+                "o"
+            ]
         }
-        
     ],
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
@@ -633,6 +760,11 @@
     "vim.statusBarColors.easymotioninputmode": "#007ACC",
     "vim.statusBarColors.surroundinputmode": "#007ACC",
     "vim.easymotion": true,
-    "vim.surround": true,:
-
+    "vim.surround": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "statusBar.foreground": "#434C5E"
+    }
 }
