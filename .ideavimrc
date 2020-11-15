@@ -1,3 +1,4 @@
+:set showmode
 :set surround
 :set multiple-cursors
 :set easymotion
@@ -23,7 +24,7 @@ vmap i <Esc>i
 vmap t \>
 vmap p (
 vmap o "
-vmap b {
+"vmap b {
 nmap cao ca"
 nmap cio ci"
 nmap ciio ?"<CR>ci"
@@ -81,8 +82,8 @@ imap <Esc>zst csw>
 :nmap z" vi"
 :nmap z' vi'
 :nmap zxx ci]
+
 :imap jj <Esc>
-":imap jk <Esc>
 :imap zz <Esc>
 :vmap zz <Esc>
 :nmap <BS> a<BS>
@@ -115,10 +116,10 @@ nmap zn :action GotoNextError<CR>
 imap zn <Esc>:action GotoNextError<CR>
 nmap zf :action GotoDeclaration<CR>
 imap zf <Esc>:action GotoDeclaration<CR>
-"nmap zu :action FindUsages<CR>
-"imap zu <Esc>:action FindUsages<CR>
-nmap zu /\u<CR>hvbc
-imap zu <Esc>/\u<CR>hvbc
+nmap zu :action FindUsages<CR>
+imap zu <Esc>:action FindUsages<CR>
+nmap zdu /\u<CR>hvbc
+imap zdu <Esc>/\u<CR>hvbc
 nmap zt /class<CR>
 imap zt <Esc>/class<CR>
 nmap zgc zz:action CheckinProject<CR>
