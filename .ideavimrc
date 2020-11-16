@@ -41,7 +41,7 @@ nmap cio ?"<CR>ci"
 nmap caab /{<CR>ca{
 nmap cab ?{<CR>ca{
 nmap ciib /{<CR>ci{
-nmap cib ?}<CR>ci{
+nmap cib ?{<CR>ci{
 nmap cau /[<CR>ca[
 nmap caau ?[<CR>ca[
 nmap ciiu /[<CR>ci[
