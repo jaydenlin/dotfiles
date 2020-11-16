@@ -5,7 +5,8 @@
 :set relativenumber
 :set number
 ":set clipboard+=unnamed
-:set nofoldenable    
+:set nofoldenable  
+
 "Move
 nmap <S-h> b
 vmap <S-h> b
@@ -16,16 +17,23 @@ vmap <S-j> 10j
 nmap <S-k> 10k
 vmap <S-k> 10k
 
+nmap zl /(<CR>l
+imap zl <Esc>/(<CR>l
+vmap zl /)<CR>
+nmap zh h?(<CR>l
+imap zh <Esc>h?(<CR>l
+vmap zh ?(<CR>
+
+"Edit Util
 nmap z; mx$a;<Esc>`x<Esc>
 imap z; <Esc>mx$a;<Esc>`x
 nmap z, mx$xa,<Esc>`x<Esc>
 imap z, <Esc>mx$xa,<Esc>`x
-vmap i <Esc>i
+
+"Visual Util
+"vmap i <Esc>i
 vmap o <Esc>o
-"vmap t \>
-"vmap p (
-"vmap o "
-"vmap b {
+
 nmap cao ca"
 nmap cio ci"
 nmap cab /{<CR>ca{
@@ -48,27 +56,16 @@ nmap dip /(<CR>di(
 nmap diip ?(<CR>di(
 nmap dao da"
 nmap dio di"
-nmap vip vi)
+nmap vip /(<CR>vi)
+nmap viip ?(<CR>vi)
 nmap vio vi"
 nmap vao va"
-nmap vap va)
-nmap vtp vt)
+nmap vap /(<CR>va)
+nmap vaap ?(<CR>va)
 nmap ,p "0p
 nmap ,P "0P
 imap z,p <Esc>"0pa
 imap z,P <Esc>"0Pa
-nmap zl /(<CR>l
-imap zl <Esc>/(<CR>l
-vmap zl /)<CR>
-
-nmap zh h?(<CR>l
-imap zh <Esc>h?(<CR>l
-vmap zh ?(<CR>
-"warp
-nmap zso csw"
-imap <Esc>zso csw"
-nmap zst csw>
-imap <Esc>zst csw>
 
 ":nmap zb /{<CR>l
 ":imap zb <Esc>/{<CR>l
@@ -92,15 +89,13 @@ imap <Esc>zst csw>
 ":nmap zl $
 ":nmap ll $
 ":imap zl <End>
-:nmap hc ^C
-:nmap zcw ciw
-:vmap zcw <Esc>ciw
 :imap zd <Esc>ddjo
 :nmap zd ddjo
 nmap qq ZQ
 nmap zq :wq<CR>
 :nmap <BS> a<BS>
 
+"Test
 imap <F1> <Esc>mby?@Test<CR>`bp?void<CR>w
 nmap <F1> mby?@Test<CR>`bp?void<CR>w
 
@@ -167,7 +162,7 @@ nmap <Space> :action AceAction<CR>
 "nmap <Space> <leader><leader>s :action KJumpAction 
 "nmap <C-\> :action AceTargetAction<CR>
 
-"mark
+"Mark
 nmap z0 mx
 imap z0 <Esc>mx
 nmap z00 `x
@@ -188,6 +183,7 @@ imap z3 <Esc>mc
 nmap z33 `c
 imap z33 <Esc>`c
 
+"Remap
 :nnoremap j k
 :nnoremap k j
 :vnoremap j k
