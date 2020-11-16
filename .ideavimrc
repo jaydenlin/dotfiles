@@ -21,48 +21,49 @@ imap z; <Esc>mx$a;<Esc>`x
 nmap z, mx$xa,<Esc>`x<Esc>
 imap z, <Esc>mx$xa,<Esc>`x
 vmap i <Esc>i
-vmap t \>
-vmap p (
-vmap o "
+vmap o <Esc>o
+"vmap t \>
+"vmap p (
+"vmap o "
 "vmap b {
 nmap cao ca"
 nmap cio ci"
-nmap ciio ?"<CR>ci"
-nmap cab f}ca{
-nmap cib f}ci{
+nmap cab /{<CR>ca{
+nmap caab ?{<CR>ca{
+nmap cib /{<CR>ci{
 nmap ciib ?}<CR>ci{
-nmap cau f]ca[
-nmap ciu f]ci[
-nmap ciiu ?]<CR>ci[
+nmap cau /[<CR>ca[
+nmap caau ?[<CR>ca[
+nmap ciu /[<CR>ci[
+nmap ciiu ?[<CR>ci[
 nmap cfo cf"
 nmap cto ct"
-nmap cip f)ci(
-nmap ciip ?)<CR>ci(
-nmap cap f)ca(
-nmap ctp f)ct(
-nmap dap f)da(
-nmap dip f)di(
-nmap diip ?)<CR>di(
-nmap dtp f)dt(
+nmap cip /(<CR>ci(
+nmap ciip ?(<CR>ci(
+nmap cap /(<CR>ca(
+nmap caap ?(<CR>ca(
+nmap dap /(<CR>da(
+nmap daap ?(<CR>da(
+nmap dip /(<CR>di(
+nmap diip ?(<CR>di(
 nmap dao da"
 nmap dio di"
-nmap dto dt"
-nmap vip f)vi)
-nmap viip ?)<CR>vi)
+nmap vip vi)
 nmap vio vi"
-nmap viio ?"<CR>vi"
 nmap vao va"
-nmap vap f)va)
-nmap vtp f)vt)
+nmap vap va)
+nmap vtp vt)
 nmap ,p "0p
 nmap ,P "0P
 imap z,p <Esc>"0pa
 imap z,P <Esc>"0Pa
 nmap zl /(<CR>l
 imap zl <Esc>/(<CR>l
+vmap zl /)<CR>
+
 nmap zh h?(<CR>l
 imap zh <Esc>h?(<CR>l
-
+vmap zh ?(<CR>
 "warp
 nmap zso csw"
 imap <Esc>zso csw"
@@ -77,8 +78,6 @@ imap <Esc>zst csw>
 :nmap z. vi}
 :nmap z) vi)
 :nmap z} vi}
-:nmap z> vit
-:nmap c> cit
 :nmap z" vi"
 :nmap z' vi'
 :nmap zxx ci]
@@ -118,8 +117,9 @@ nmap zf :action GotoDeclaration<CR>
 imap zf <Esc>:action GotoDeclaration<CR>
 nmap zu :action FindUsages<CR>
 imap zu <Esc>:action FindUsages<CR>
-nmap zdu /\u<CR>hvbc
-imap zdu <Esc>/\u<CR>hvbc
+nmap ze /\u<CR>hvbc
+vmap ze b<Esc>/\u<CR>hvbc
+imap ze <Esc>/\u<CR>hvbc
 nmap zt /class<CR>
 imap zt <Esc>/class<CR>
 nmap zgc zz:action CheckinProject<CR>
@@ -187,7 +187,6 @@ nmap z3 mc
 imap z3 <Esc>mc
 nmap z33 `c
 imap z33 <Esc>`c
-
 
 :nnoremap j k
 :nnoremap k j
