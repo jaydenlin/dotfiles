@@ -60,6 +60,10 @@ nmap daao /"<CR>da"
 nmap dao ?"<CR>da"
 nmap diio /"<CR>di"
 nmap dio ?"<CR>di"
+nmap daab /{<CR>da{
+nmap dab ?{<CR>da
+nmap diib /{<CR>di{
+nmap dib ?{<CR>di{
 nmap viip /(<CR>vi)
 nmap vip ?(<CR>vi)
 nmap viio /"<CR>vi"
@@ -68,6 +72,10 @@ nmap vaao /"<CR>va"
 nmap vao ?"<CR>va"
 nmap vaap /(<CR>va)
 nmap vap ?(<CR>va)
+nmap viib /{<CR>vi{
+nmap vib ?{<CR>vi{
+nmap vaab /{<CR>va{
+nmap vab ?{<CR>va{
 nmap ,p "0p
 nmap ,P "0P
 imap z,p <Esc>"0pa
