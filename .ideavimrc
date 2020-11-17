@@ -1,4 +1,3 @@
-:set keep-english-in-normal
 :set showmode
 :set surround
 :set multiple-cursors
