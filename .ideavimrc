@@ -1,3 +1,4 @@
+:set keep-english-in-normal
 :set showmode
 :set surround
 :set multiple-cursors
@@ -33,49 +34,55 @@ imap z, <Esc>mx$xa,<Esc>`x
 "Visual Util
 "vmap i <Esc>i
 vmap o <Esc>o
+vmap <Space> :action AceAction<CR>
 
-nmap caao /"<CR>ca"
-nmap cao ?"<CR>ca"
-nmap ciio /"<CR>ci"
-nmap cio ?"<CR>ci"
-nmap caab /{<CR>ca{
-nmap cab ?{<CR>ca{
-nmap ciib /{<CR>ci{
-nmap cib ?{<CR>ci{
-nmap cau /[<CR>ca[
-nmap caau ?[<CR>ca[
-nmap ciiu /[<CR>ci[
-nmap ciu ?[<CR>ci[
+nmap caao mx/"<CR>ca"
+nmap cao mx?"<CR>ca"
+nmap ciio mx/"<CR>ci"
+nmap cio mx?"<CR>ci"
+nmap caab mx/{<CR>ca{
+nmap cab mx?{<CR>ca{
+nmap ciib mx/{<CR>ci{
+nmap cib mx?{<CR>ci{
+nmap cau mx/[<CR>ca[
+nmap caau mx?[<CR>ca[
+nmap ciiu mx/[<CR>ci[
+nmap ciu mx?[<CR>ci[
 nmap cfo cf"
 nmap cto ct"
-nmap ciip /(<CR>ci(
-nmap cip ?(<CR>ci(
-nmap caap /(<CR>ca(
-nmap cap ?(<CR>ca(
-nmap daap /(<CR>da(
-nmap dap ?(<CR>da(
-nmap diip /(<CR>di(
-nmap dip ?(<CR>di(
-nmap daao /"<CR>da"
-nmap dao ?"<CR>da"
-nmap diio /"<CR>di"
-nmap dio ?"<CR>di"
-nmap daab /{<CR>da{
-nmap dab ?{<CR>da
-nmap diib /{<CR>di{
-nmap dib ?{<CR>di{
-nmap viip /(<CR>vi)
-nmap vip ?(<CR>vi)
-nmap viio /"<CR>vi"
-nmap vio ?"<CR>vi"
-nmap vaao /"<CR>va"
-nmap vao ?"<CR>va"
-nmap vaap /(<CR>va)
-nmap vap ?(<CR>va)
-nmap viib /{<CR>vi{
-nmap vib ?{<CR>vi{
-nmap vaab /{<CR>va{
-nmap vab ?{<CR>va{
+nmap ciip mx/(<CR>ci(
+nmap cip mx?(<CR>ci(
+nmap caap mx/(<CR>ca(
+nmap cap mx?(<CR>ca(
+nmap daap mx/(<CR>da(
+nmap dap mx?(<CR>da(
+nmap diip mx/(<CR>di(
+nmap dip mx?(<CR>di(
+nmap daao mx/"<CR>da"
+nmap dao mx?"<CR>da"
+nmap diio mx/"<CR>di"
+nmap dio mx?"<CR>di"
+nmap daab mx/{<CR>da{
+nmap dab mx?{<CR>da
+nmap diib mx/{<CR>di{
+nmap dib mx?{<CR>di{
+nmap viip mx/(<CR>vi)
+nmap vip mx?(<CR>vi)
+nmap viio mx/"<CR>vi"
+nmap vio mx?"<CR>vi"
+nmap vaao mx/"<CR>va"
+nmap vao mx?"<CR>va"
+nmap vaap mx/(<CR>va)
+nmap vap mx?(<CR>va)
+nmap viib mx/{<CR>vi{
+nmap vib mx?{<CR>vi{
+nmap vaab mx/{<CR>va{
+nmap vab mx?{<CR>va{
+
+nmap zx <Esc>`x
+vmap zx <Esc>`x 
+imap zx <Esc>`x
+
 nmap ,p "0p
 nmap ,P "0P
 imap z,p <Esc>"0pa
