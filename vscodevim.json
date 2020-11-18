@@ -5,40 +5,135 @@
     "editor.largeFileOptimizations": false,
     "editor.lineNumbers": "relative",
     "vim.useCtrlKeys": false,
-    "vim.normalModeKeyBindings": [
-        
-    ],
+    "vim.normalModeKeyBindings": [],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "z",
-                "x"
+                "z", "x"
             ],
             "after": [
                 "<Esc>",
-                // "`",
-                // "x"
+                //"`",
+                //"x"
             ],
             "commands": [
                 "workbench.action.navigateBack"
-            ] 
-        }, 
+            ]
+        },
+       
         {
             "before": [
+                "a",
+                "a",
+                "p"
+            ],
+            "after": [
+                "/",
+                ")",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "p"
+            ],
+            "after": [
+                "?",
+                "(",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "a",
+                "q"
+            ],
+            "after": [
+                "/",
+                "`",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "q"
+            ],
+            "after": [
+                "?",
+                "`",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "a",
+                "b"
+            ],
+            "after": [
+                "/",
+                "}",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "b",
+            ],
+            "after": [
+                "?",
+                "{",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "a",
+                "a",
                 "o"
             ],
             "after": [
-                "<Esc>",
-                "o"
+                "/",
+                "\"",
+                "<CR>"
             ]
         },
+        {
+            "before": [
+                "a",
+                "o",
+            ],
+            "after": [
+                "?",
+                "\"",
+                "<CR>"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "o"
+        //     ],
+        //     "after": [
+        //         "<Esc>",
+        //         "m",
+        //         ">",
+        //         "o"
+        //     ]
+        // },
         {
             "before": [
                 "space"
             ],
             "after": [
                 "<Esc>",
-                "leader", "leader", "2", "s"
+                "leader",
+                "leader",
+                "2",
+                "s"
             ]
         },
         {
@@ -60,7 +155,14 @@
             ]
         },
         {
-
+            "before": [
+                "<Esc>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
             "before": [
                 "z",
                 "l"
@@ -77,7 +179,6 @@
                 "h"
             ],
             "after": [
-               
                 "?",
                 "(",
                 "<CR>"
@@ -134,7 +235,7 @@
             "after": [
                 "j"
             ]
-        } 
+        }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -146,7 +247,6 @@
                 "/",
                 "u",
                 "<CR>"
-               
             ]
         },
         {
@@ -192,32 +292,51 @@
             ]
         },
         {
-            "before": ["z", "f"],
+            "before": [
+                "z",
+                "f"
+            ],
             "commands": [
                 "editor.action.revealDefinition"
-            ] 
+            ]
         },
         {
-            "before": ["z", "n"],
+            "before": [
+                "z",
+                "n"
+            ],
             "commands": [
                 "editor.action.marker.nextInFiles"
-            ] 
+            ]
         },
         {
-            "before": ["z", "k"],
+            "before": [
+                "z",
+                "k"
+            ],
             "commands": [
                 "workbench.action.navigateForward"
-            ] 
+            ]
         },
         {
-            "before": ["z", "j"],
+            "before": [
+                "z",
+                "j"
+            ],
             "commands": [
                 "workbench.action.navigateBack"
-            ] 
+            ]
         },
         {
-            "before": ["space"],
-            "after": ["leader", "leader", "2", "s"]
+            "before": [
+                "space"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "2",
+                "s"
+            ]
         },
         {
             "before": [
@@ -278,6 +397,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -313,6 +433,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -348,6 +469,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -383,6 +505,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -400,6 +523,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "`",
                 "<CR>",
@@ -453,6 +577,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "[",
                 "<CR>",
@@ -488,6 +613,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "[",
                 "<CR>",
@@ -523,6 +649,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "[",
                 "<CR>",
@@ -534,26 +661,13 @@
         {
             "before": [
                 "c",
-                "f",
-                "o"
-            ],
-            "after": [
-                "m",
-                "x",
-                "c",
-                "f",
-                "\""
-            ]
-        },
-        {
-            "before": [
-                "c",
                 "i",
                 "p"
             ],
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "(",
                 "<CR>",
@@ -607,6 +721,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "(",
                 "<CR>",
@@ -642,6 +757,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "(",
                 "<CR>",
@@ -677,6 +793,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 ")",
                 "<CR>",
@@ -694,6 +811,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -729,6 +847,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -755,7 +874,6 @@
                 "\""
             ]
         },
-
         {
             "before": [
                 "d",
@@ -765,6 +883,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -791,7 +910,6 @@
                 "{"
             ]
         },
-        
         {
             "before": [
                 "d",
@@ -801,6 +919,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -827,8 +946,78 @@
                 "{"
             ]
         },
-
-
+        {
+            "before": [
+                "d",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "d",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "d",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "d",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "d",
+                "a",
+                "`"
+            ]
+        },
         {
             "before": [
                 "v",
@@ -838,6 +1027,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "(",
                 "<CR>",
@@ -864,7 +1054,6 @@
                 ")"
             ]
         },
-
         {
             "before": [
                 "v",
@@ -874,6 +1063,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "(",
                 "<CR>",
@@ -909,6 +1099,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -935,7 +1126,6 @@
                 "{"
             ]
         },
-
         {
             "before": [
                 "v",
@@ -945,6 +1135,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "{",
                 "<CR>",
@@ -980,6 +1171,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -1015,6 +1207,7 @@
             "after": [
                 "m",
                 "x",
+                "l",
                 "?",
                 "\"",
                 "<CR>",
@@ -1039,6 +1232,78 @@
                 "v",
                 "i",
                 "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "v",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "v",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "v",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "v",
+                "a",
+                "`"
             ]
         },
         {
@@ -1053,7 +1318,7 @@
             ],
             "commands": [
                 "workbench.action.navigateBack"
-            ] 
+            ]
         },
         {
             "before": [
@@ -1152,43 +1417,55 @@
             ],
             "commands": [
                 "workbench.action.navigateBack"
-            ] 
+            ]
         },
         {
-            "before": ["z", "f"],
+            "before": [
+                "z",
+                "f"
+            ],
             "after": [
                 "<Esc>"
             ],
             "commands": [
                 "editor.action.revealDefinition"
-            ] 
+            ]
         },
         {
-            "before": ["z", "n"],
+            "before": [
+                "z",
+                "n"
+            ],
             "after": [
                 "<Esc>"
             ],
             "commands": [
                 "editor.action.marker.nextInFiles"
-            ] 
+            ]
         },
         {
-            "before": ["z", "k"],
+            "before": [
+                "z",
+                "k"
+            ],
             "after": [
                 "<Esc>"
             ],
             "commands": [
                 "workbench.action.navigateForward"
-            ] 
+            ]
         },
         {
-            "before": ["z", "j"],
+            "before": [
+                "z",
+                "j"
+            ],
             "after": [
                 "<Esc>"
             ],
             "commands": [
                 "workbench.action.navigateBack"
-            ] 
+            ]
         },
         {
             "before": [
@@ -1278,7 +1555,10 @@
         }
     ],
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.normal": [
+        "#8FBCBB",
+        "#434C5E"
+    ],
     "vim.statusBarColors.insert": "#BF616A",
     "vim.statusBarColors.visual": "#B48EAD",
     "vim.statusBarColors.visualline": "#B48EAD",
@@ -1292,9 +1572,9 @@
     "vim.easymotion": true,
     "vim.surround": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#B48EAD",
-        "statusBar.noFolderBackground": "#B48EAD",
-        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
         "statusBar.foreground": "#434C5E"
     }
 }
