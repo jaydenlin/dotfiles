@@ -32,7 +32,8 @@ imap z, <Esc>mx$xa,<Esc>`x
 
 "Visual Util
 "vmap i <Esc>i
-:vnoremap a o
+":vnoremap i <Esc>i
+":vnoremap a o
 ":vnoremap o <Esc>o
 vmap <Space> :action AceAction<CR>
 vmap ap ?(<CR>
@@ -142,15 +143,17 @@ imap zu <Esc>:action FindUsages<CR>
 nmap ze /\u<CR>hvbc
 vmap ze b<Esc>/\u<CR>hvbc
 imap ze <Esc>/\u<CR>hvbc
-nmap zt /class<CR>
-imap zt <Esc>/class<CR>
+nmap ztc ?public class<CR>
+imap ztc <Esc>?public class<CR>
+nmap zta ?@Autowired<CR>k
+imap zta <Esc>?@Autowired<CR>k
 nmap zgc zz:action CheckinProject<CR>
 
 nmap zra zz:action RearrangeCode<CR>zz:action ReformatCode<CR>zz:action Rerun<CR>
 imap zra <Esc>zz:action RearrangeCode<CR>zz:action ReformatCode<CR>zz:action Rerun<CR>
 
 map zrr :action RenameElement<CR>
-
+map zrc :action IntroduceConstant<CR>
 map zri :action Inline<CR>
 imap zri <Esc>:action Inline<CR>
 map zrf :action IntroduceField<CR>
@@ -158,10 +161,8 @@ imap zrf <Esc>:action IntroduceField<CR>
 map zrp :action IntroduceParameter<CR>
 imap zrp <Esc>:action IntroduceParameter<CR>
 
-nmap zsp f":action IntroduceParameter<CR>
-
 map zrv :action IntroduceVariable<CR>
-vmap zrv <Esc>:action IntroduceVariable<CR>
+vmap zrv :action IntroduceVariable<CR>
 imap zrv <Esc>:action IntroduceVariable<CR>
 vmap zrm :action ExtractMethod<CR>
 vmap M :action ExtractMethod<CR>
