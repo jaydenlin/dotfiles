@@ -166,6 +166,7 @@ vmap zrv :action IntroduceVariable<CR>
 imap zrv <Esc>:action IntroduceVariable<CR>
 vmap zrm :action ExtractMethod<CR>
 vmap M :action ExtractMethod<CR>
+vmap S :action SurroundWith<CR>
 :vmap \s :action SurroundWith<CR>
 map zrt :action SearchEverywhere<CR>
 imap zrt <Esc>:action SearchEverywhere<CR>
