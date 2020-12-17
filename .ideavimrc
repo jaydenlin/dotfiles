@@ -83,6 +83,8 @@ nmap viip mx/(<CR>vi)
 nmap vip mxl?(<CR>vi)
 nmap viiq mx/'<CR>vi'
 nmap viq mxl?'<CR>vi'
+nmap vaao mx/"<CR>va"
+nmap vao mxl?"<CR>va"
 nmap vaaq mx/'<CR>va'
 nmap vaq mxl?'<CR>va'
 nmap vaap mx/(<CR>va)
