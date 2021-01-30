@@ -40,6 +40,9 @@ vmap P ?(<CR>
 vmap p /)<CR>
 vmap B ?{<CR>
 vmap b /}<CR>
+vnoremap . l/<Space><CR>h
+vnoremap , l/,<CR>h
+vnoremap ; /;<CR>
 
 nmap caao mx/"<CR>ca"
 nmap cao mxl?"<CR>ca"
@@ -168,6 +171,8 @@ map zrf :action IntroduceField<CR>
 imap zrf <Esc>:action IntroduceField<CR>
 map zrp :action IntroduceParameter<CR>
 imap zrp <Esc>:action IntroduceParameter<CR>
+map zro :action IntroduceParameterObject<CR>
+imap zro <Esc>:action IntroduceParameterObject<CR>
 
 map zrv :action IntroduceVariable<CR>
 vmap zrv :action IntroduceVariable<CR>
@@ -178,8 +183,8 @@ vmap S :action SurroundWith<CR>
 :vmap \s :action SurroundWith<CR>
 map zrt :action SearchEverywhere<CR>
 imap zrt <Esc>:action SearchEverywhere<CR>
-map zro :action Move<CR>
-imap zro <Esc>:action Move<CR>
+"map zro :action Move<CR>
+"imap zro <Esc>:action Move<CR>
 map <C-D> :action EditorDuplicateLines<CR>
 imap <C-D> <Esc>:action EditorDuplicateLines<CR>
 map <C-A-K> :action MoveLineUp<CR>:action VimAutoIndentLines<CR>
