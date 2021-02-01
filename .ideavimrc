@@ -40,6 +40,7 @@ vmap P ?(<CR>
 vmap p /)<CR>
 vmap B ?{<CR>
 vmap b /}<CR>
+vnorema 0 o_ 
 vnoremap . l/<Space><CR>h
 vnoremap , l/,<CR>h
 vnoremap ; /;<CR>
@@ -128,8 +129,8 @@ imap z,P <Esc>"0Pa
 ":nmap zl $
 ":nmap ll $
 ":imap zl <End>
-:imap zd <Esc>ddjo
-:nmap zd ddjo
+":imap zd <Esc>ddjo
+":nmap zd ddjo
 nmap qq ZQ
 nmap zq :wq<CR>
 :nmap <BS> a<BS>
@@ -147,8 +148,10 @@ nmap zk :action Forward<CR>
 imap zk <Esc>:action Forward<CR>
 nmap zn :action GotoNextError<CR>
 imap zn <Esc>:action GotoNextError<CR>
-nmap zf :action GotoDeclaration<CR>
-imap zf <Esc>:action GotoDeclaration<CR>
+nmap zf 0f(h
+imap zf <Esc>0f(h
+nmap zd :action GotoDeclaration<CR>
+imap zd <Esc>:action GotoDeclaration<CR>
 nmap zu :action FindUsages<CR>
 imap zu <Esc>:action FindUsages<CR>
 nmap ze /\u<CR>hvbc
@@ -174,6 +177,10 @@ imap zrp <Esc>:action IntroduceParameter<CR>
 map zro :action IntroduceParameterObject<CR>
 imap zro <Esc>:action IntroduceParameterObject<CR>
 
+map zrs :action ChangeSignature<CR>
+vmap zrs :action ChangeSignature<CR>
+imap zrs <Esc>:action ChangeSignature<CR>
+
 map zrv :action IntroduceVariable<CR>
 vmap zrv :action IntroduceVariable<CR>
 imap zrv <Esc>:action IntroduceVariable<CR>
@@ -183,6 +190,7 @@ vmap S :action SurroundWith<CR>
 :vmap \s :action SurroundWith<CR>
 map zrt :action SearchEverywhere<CR>
 imap zrt <Esc>:action SearchEverywhere<CR>
+
 "map zro :action Move<CR>
 "imap zro <Esc>:action Move<CR>
 map <C-D> :action EditorDuplicateLines<CR>
