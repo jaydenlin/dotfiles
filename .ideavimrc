@@ -36,14 +36,15 @@ imap z, <Esc>mx$xa,<Esc>`x
 ":vnoremap a o
 ":vnoremap o <Esc>o
 vmap <Space> :action AceAction<CR>
-vmap P ?(<CR>
-vmap p /)<CR>
-vmap B ?{<CR>
-vmap b /}<CR>
-vnorema 0 o_ 
-vnoremap . l/<Space><CR>h
-vnoremap , l/,<CR>h
-vnoremap ; /;<CR>
+vmap P mxo?(<CR>
+vmap p mx/)<CR>
+vmap B mxo?{<CR>
+vmap b mx/}<CR>
+vnorema 0 mxo_ 
+vnoremap s mxl/<Space><CR>h
+vnoremap S mxoh?<Space><CR>l
+vnoremap , mxl/,<CR>h
+vnoremap ; mx/;<CR>
 
 nmap caao mx/"<CR>ca"
 nmap cao mxl?"<CR>ca"
@@ -186,7 +187,7 @@ vmap zrv :action IntroduceVariable<CR>
 imap zrv <Esc>:action IntroduceVariable<CR>
 vmap zrm :action ExtractMethod<CR>
 vmap M :action ExtractMethod<CR>
-vmap S :action SurroundWith<CR>
+vmap R :action SurroundWith<CR>
 :vmap \s :action SurroundWith<CR>
 map zrt :action SearchEverywhere<CR>
 imap zrt <Esc>:action SearchEverywhere<CR>
