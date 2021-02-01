@@ -1,12 +1,23 @@
 {
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "tabnine.experimentalAutoImports": true,
     "editor.largeFileOptimizations": false,
     "editor.lineNumbers": "relative",
     "vim.useCtrlKeys": false,
+    "breadcrumbs.enabled": true,
     "vim.normalModeKeyBindings": [],
     "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "z",
+                "u"
+            ],
+            "after": [
+                "references-view.findReferences",
+               
+            ]
+        },
         {
             "before": [
                 "z", "x"
@@ -20,97 +31,88 @@
                 "workbench.action.navigateBack"
             ]
         },
+        {//fix d issue
+            "before": [
+                "d"
+            ],
+            "after": [
+                "c",
+                "<Esc>",
+                //"`",
+                //"x"
+            ]
+        },
        
         {
             "before": [
-                "a",
-                "a",
+                "P"
+            ],
+            "after": [
+                "o","?","(","<CR>","o"
+            ]
+        },
+        {
+            "before": [
                 "p"
             ],
             "after": [
-                "/",
-                ")",
-                "<CR>"
+                "/",")","<CR>"
             ]
         },
         {
             "before": [
-                "a",
-                "p"
+                "B"
             ],
             "after": [
-                "?",
-                "(",
-                "<CR>"
+                "o","?","{","<CR>","o"
             ]
         },
         {
             "before": [
-                "a",
-                "a",
-                "q"
-            ],
-            "after": [
-                "/",
-                "`",
-                "<CR>"
-            ]
-        },
-        {
-            "before": [
-                "a",
-                "q"
-            ],
-            "after": [
-                "?",
-                "`",
-                "<CR>"
-            ]
-        },
-        {
-            "before": [
-                "a",
-                "a",
                 "b"
             ],
             "after": [
-                "/",
-                "}",
-                "<CR>"
+                "/","}","<CR>"
             ]
         },
         {
             "before": [
-                "a",
-                "b",
+                "0",
             ],
             "after": [
-                "?",
-                "{",
-                "<CR>"
+                "o","_","o"
             ]
         },
         {
             "before": [
-                "a",
-                "a",
-                "o"
+                "s",
             ],
             "after": [
-                "/",
-                "\"",
-                "<CR>"
+                "l","/","<Space>","<CR>","h"
             ]
         },
         {
             "before": [
-                "a",
-                "o",
+                "S",
             ],
             "after": [
-                "?",
-                "\"",
-                "<CR>"
+                "o","h","?","<Space>","<CR>","l","o"
+            ]
+        },
+        {
+            "before": [
+                ",",
+            ],
+            "after": [
+                "l","/","<CR>","h"
+            ]
+        },
+        {
+            "before": [
+                ";",
+            ],
+            "after": [
+                "/",";","<CR>"
             ]
         },
         // {
@@ -238,6 +240,7 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        
         {
             "before": [
                 "z",
@@ -1539,20 +1542,8 @@
                 "x",
                 "<Esc>"
             ]
-        },
-        {
-            "before": [
-                "z",
-                "d"
-            ],
-            "after": [
-                "<Esc>",
-                "d",
-                "d",
-                "k",
-                "o"
-            ]
         }
+        
     ],
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [
@@ -1576,5 +1567,12 @@
         "statusBar.noFolderBackground": "#8FBCBB",
         "statusBar.debuggingBackground": "#8FBCBB",
         "statusBar.foreground": "#434C5E"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.enablePreview": false,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     }
 }
