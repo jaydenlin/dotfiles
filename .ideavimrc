@@ -36,13 +36,13 @@ imap z, <Esc>mx$xa,<Esc>`x
 ":vnoremap a o
 ":vnoremap o <Esc>o
 vmap <Space> :action AceAction<CR>
-vmap P mxo?(<CR>
+vmap P mxo?(<CR>o
 vmap p mx/)<CR>
-vmap B mxo?{<CR>
+vmap B mxo?{<CR>o
 vmap b mx/}<CR>
-vnorema 0 mxo_ 
+vnorema 0 mxo_o 
 vnoremap s mxl/<Space><CR>h
-vnoremap S mxoh?<Space><CR>l
+vnoremap S mxoh?<Space><CR>lo
 vnoremap , mxl/,<CR>h
 vnoremap ; mx/;<CR>
 
