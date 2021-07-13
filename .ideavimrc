@@ -1,0 +1,241 @@
+:set showmode
+:set surround
+:set multiple-cursors
+:set easymotion
+:set relativenumber
+:set number
+":set clipboard+=unnamed
+:set nofoldenable  
+
+"Move
+nmap <S-h> b
+vmap <S-h> b
+nmap <S-l> w
+vmap <S-l> w
+nmap <S-j> 10j
+vmap <S-j> 10j
+nmap <S-k> 10k
+vmap <S-k> 10k
+
+nmap zl /(<CR>l
+imap zl <Esc>/(<CR>l
+vmap zl /)<CR>
+nmap zh h?(<CR>l
+imap zh <Esc>h?(<CR>l
+vmap zh ?(<CR>
+
+"Edit Util
+nmap z; mx$a;<Esc>`x<Esc>
+imap z; <Esc>mx$a;<Esc>`x
+nmap z, mx$xa,<Esc>`x<Esc>
+imap z, <Esc>mx$xa,<Esc>`x
+
+"Visual Util
+"vmap i <Esc>i
+":vnoremap i <Esc>i
+":vnoremap a o
+":vnoremap o <Esc>o
+vmap <Space> :action AceAction<CR>
+vmap P mxo?(<CR>o
+vmap p mx/)<CR>
+vmap B mxo?{<CR>o
+vmap b mx/}<CR>
+vnoremap 0 mxo_o 
+vnoremap s mxl/<Space><CR>h
+vnoremap S mxoh?<Space><CR>lo
+vnoremap , mxl/,<CR>h
+vnoremap ; mx/;<CR>
+
+nmap caao mx/"<CR>ca"
+nmap cao mxl?"<CR>ca"
+nmap ciio mx/"<CR>ci"
+nmap cio mxl?"<CR>ci"
+nmap caaq mx/'<CR>ca'
+nmap caq mxl?'<CR>ca'
+nmap ciiq mx/'<CR>ci'
+nmap ciq mxl?'<CR>ci'
+nmap caab mx/{<CR>ca{
+nmap cab mxl?{<CR>ca{
+nmap ciib mx/{<CR>ci{
+nmap cib mxl?{<CR>ci{
+nmap cau mxl?[<CR>ca[
+nmap caau mx/[<CR>ca[
+nmap ciiu mx/[<CR>ci[
+nmap ciu mxl?[<CR>ci[
+nmap cfo cf"
+nmap cto ct"
+nmap ciip mx/(<CR>ci(
+nmap cip mxl?(<CR>ci(
+nmap caap mx/(<CR>ca(
+nmap cap mxl?(<CR>ca(
+nmap daap mx/(<CR>da(
+nmap dap mxl?(<CR>da(
+nmap diip mx/(<CR>di(
+nmap dip mxl?(<CR>di(
+nmap daao mx/"<CR>da"
+nmap dao mxl?"<CR>da"
+nmap diio mx/"<CR>di"
+nmap dio mxl?"<CR>di"
+nmap daab mx/{<CR>da{
+nmap dab mxl?{<CR>da
+nmap diib mx/{<CR>di{
+nmap dib mxl?{<CR>di{
+nmap viip mx/(<CR>vi)
+nmap vip mxl?(<CR>vi)
+nmap viio mx/"<CR>vi"
+nmap vio mxl?"<CR>vi"
+nmap viip mx/(<CR>vi)
+nmap vip mxl?(<CR>vi)
+nmap viiq mx/'<CR>vi'
+nmap viq mxl?'<CR>vi'
+nmap vaao mx/"<CR>va"
+nmap vao mxl?"<CR>va"
+nmap vaaq mx/'<CR>va'
+nmap vaq mxl?'<CR>va'
+nmap vaap mx/(<CR>va)
+nmap vap mxl?(<CR>va)
+nmap viib mx/{<CR>vi{
+nmap vib mxl?{<CR>vi{
+nmap vaab mx/{<CR>va{
+nmap vab mxl?{<CR>va{
+
+nmap zx <Esc>`x
+vmap zx <Esc>`x 
+imap zx <Esc>`x
+
+nmap ,p "0p
+nmap ,P "0P
+imap z,p <Esc>"0pa
+imap z,P <Esc>"0Pa
+
+":nmap zb /{<CR>l
+":imap zb <Esc>/{<CR>l
+":nmap ze /}<CR>l
+":imap ze <Esc>/}<CR>l
+":nmap z, vi)
+:nmap z. vi}
+:nmap z) vi)
+:nmap z} vi}
+:nmap z" vi"
+:nmap z' vi'
+:nmap zxx ci]
+
+:imap jj <Esc>
+:imap zz <Esc>
+:vmap zz <Esc>
+:nmap <BS> a<BS>
+":nmap zh ^
+":nmap hh ^
+":imap zh <Esc>^i
+":nmap zl $
+":nmap ll $
+":imap zl <End>
+":imap zd <Esc>ddjo
+":nmap zd ddjo
+nmap qq ZQ
+nmap zq :wq<CR>
+:nmap <BS> a<BS>
+
+"Test
+imap <F1> <Esc>mby?@Test<CR>`bp?void<CR>w
+nmap <F1> mby?@Test<CR>`bp?void<CR>w
+
+imap <F2> <Esc>mby?def<CR>`bp?def<CR>f"w
+nmap <F2> mby?def<CR>`bp?def<CR>f"w
+
+nmap zj :action Back<CR>
+imap zj <Esc>:action Back<CR>
+nmap zk :action Forward<CR>
+imap zk <Esc>:action Forward<CR>
+nmap zn :action GotoNextError<CR>
+imap zn <Esc>:action GotoNextError<CR>
+nmap zf 0f(h
+imap zf <Esc>0f(h
+nmap zd :action GotoDeclaration<CR>
+imap zd <Esc>:action GotoDeclaration<CR>
+nmap zu :action FindUsages<CR>
+imap zu <Esc>:action FindUsages<CR>
+nmap ze /\u<CR>hvbc
+vmap ze b<Esc>/\u<CR>hvbc
+imap ze <Esc>/\u<CR>hvbc
+nmap ztc ?public class<CR>
+imap ztc <Esc>?public class<CR>
+nmap zta ?@Autowired<CR>k
+imap zta <Esc>?@Autowired<CR>k
+nmap zgc zz:action CheckinProject<CR>
+
+nmap zra zz:action RearrangeCode<CR>zz:action ReformatCode<CR>zz:action Rerun<CR>
+imap zra <Esc>zz:action RearrangeCode<CR>zz:action ReformatCode<CR>zz:action Rerun<CR>
+
+map zrr :action RenameElement<CR>
+map zrc :action IntroduceConstant<CR>
+map zri :action Inline<CR>
+imap zri <Esc>:action Inline<CR>
+map zrf :action IntroduceField<CR>
+imap zrf <Esc>:action IntroduceField<CR>
+map zrp :action IntroduceParameter<CR>
+imap zrp <Esc>:action IntroduceParameter<CR>
+map zro :action IntroduceParameterObject<CR>
+imap zro <Esc>:action IntroduceParameterObject<CR>
+
+map zrs :action ChangeSignature<CR>
+vmap zrs :action ChangeSignature<CR>
+imap zrs <Esc>:action ChangeSignature<CR>
+
+map zrv :action IntroduceVariable<CR>
+vmap zrv :action IntroduceVariable<CR>
+imap zrv <Esc>:action IntroduceVariable<CR>
+vmap zrm :action ExtractMethod<CR>
+vmap M :action ExtractMethod<CR>
+vmap R :action SurroundWith<CR>
+:vmap \s :action SurroundWith<CR>
+map zrt :action SearchEverywhere<CR>
+imap zrt <Esc>:action SearchEverywhere<CR>
+
+"map zro :action Move<CR>
+"imap zro <Esc>:action Move<CR>
+map <C-D> :action EditorDuplicateLines<CR>
+imap <C-D> <Esc>:action EditorDuplicateLines<CR>
+map <C-A-K> :action MoveLineUp<CR>:action VimAutoIndentLines<CR>
+imap <C-A-K> <Esc>:action MoveLineUp<CR>:action VimAutoIndentLines<CR>
+map <C-A-J> :action MoveLineDown<CR>:action VimAutoIndentLines<CR>
+imap <C-A-J> <Esc>:action MoveLineDown<CR>:action VimAutoIndentLines<CR>
+map <A-D> :action EditorDeleteLine<CR>
+imap <A-D> <Esc>:action EditorDeleteLine<CR>
+:nmap ,m :action FileStructurePopup<CR>
+:nmap zcc ci"
+:nmap zaa ca"
+nmap <A-u> :redo<CR>
+
+nmap ,g :action Generate<CR>
+
+nmap <Space> :action AceAction<CR>
+"nmap <Space> <leader><leader>s :action KJumpAction 
+"nmap <C-\> :action AceTargetAction<CR>
+
+"Mark
+nmap z0 mx
+imap z0 <Esc>mx
+nmap z00 `x
+imap z00 <Esc>`x
+
+nmap z1 ma
+imap z1 <Esc>ma
+nmap z11 `a
+imap z11 <Esc>`a
+
+nmap z2 mb
+imap z2 <Esc>mb
+nmap z22 `b
+imap z22 <Esc>`b
+
+nmap z3 mc
+imap z3 <Esc>mc
+nmap z33 `c
+imap z33 <Esc>`c
+
+"Remap
+:nnoremap j k
+:nnoremap k j
+:vnoremap j k
+:vnoremap k j

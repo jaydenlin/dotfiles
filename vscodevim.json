@@ -1,0 +1,1578 @@
+{
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "tabnine.experimentalAutoImports": true,
+    "editor.largeFileOptimizations": false,
+    "editor.lineNumbers": "relative",
+    "vim.useCtrlKeys": false,
+    "breadcrumbs.enabled": true,
+    "vim.normalModeKeyBindings": [],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "z",
+                "u"
+            ],
+            "after": [
+                "references-view.findReferences",
+               
+            ]
+        },
+        {
+            "before": [
+                "z", "x"
+            ],
+            "after": [
+                "<Esc>",
+                //"`",
+                //"x"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {//fix d issue
+            "before": [
+                "d"
+            ],
+            "after": [
+                "c",
+                "<Esc>",
+                //"`",
+                //"x"
+            ]
+        },
+       
+        {
+            "before": [
+                "P"
+            ],
+            "after": [
+                "o","?","(","<CR>","o"
+            ]
+        },
+        {
+            "before": [
+                "p"
+            ],
+            "after": [
+                "/",")","<CR>"
+            ]
+        },
+        {
+            "before": [
+                "B"
+            ],
+            "after": [
+                "o","?","{","<CR>","o"
+            ]
+        },
+        {
+            "before": [
+                "b"
+            ],
+            "after": [
+                "/","}","<CR>"
+            ]
+        },
+        {
+            "before": [
+                "0",
+            ],
+            "after": [
+                "o","_","o"
+            ]
+        },
+        {
+            "before": [
+                "s",
+            ],
+            "after": [
+                "l","/","<Space>","<CR>","h"
+            ]
+        },
+        {
+            "before": [
+                "S",
+            ],
+            "after": [
+                "o","h","?","<Space>","<CR>","l","o"
+            ]
+        },
+        {
+            "before": [
+                ",",
+            ],
+            "after": [
+                "l","/","<CR>","h"
+            ]
+        },
+        {
+            "before": [
+                ";",
+            ],
+            "after": [
+                "/",";","<CR>"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "o"
+        //     ],
+        //     "after": [
+        //         "<Esc>",
+        //         "m",
+        //         ">",
+        //         "o"
+        //     ]
+        // },
+        {
+            "before": [
+                "space"
+            ],
+            "after": [
+                "<Esc>",
+                "leader",
+                "leader",
+                "2",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "A"
+            ],
+            "after": [
+                "<Esc>",
+                "A"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "z"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "l"
+            ],
+            "after": [
+                "/",
+                ")",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "h"
+            ],
+            "after": [
+                "?",
+                "(",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "b",
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "w",
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k",
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j",
+            ]
+        },
+        {
+            "before": [
+                "j",
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "j"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        
+        {
+            "before": [
+                "z",
+                "e"
+            ],
+            "after": [
+                "/",
+                "u",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "w"
+            ],
+            "after": [
+                "V"
+            ],
+            "commands": [
+                "editor.action.smartSelect.expand"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "r",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename",
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k",
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j",
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "f"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "n"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "space"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "2",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "b",
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "w",
+            ]
+        },
+        {
+            "before": [
+                "j",
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "c",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "c",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "c",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "c",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "c",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "c",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "c",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "c",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "[",
+                "<CR>",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "[",
+                "<CR>",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "a",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "[",
+                "<CR>",
+                "c",
+                "a",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "[",
+                "<CR>",
+                "c",
+                "a",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "[",
+                "<CR>",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "u"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "[",
+                "<CR>",
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "(",
+                "<CR>",
+                "c",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "c",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "c",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "(",
+                "<CR>",
+                "c",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "d",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "(",
+                "<CR>",
+                "d",
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "d",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                ")",
+                "<CR>",
+                "d",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "d",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "d",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "d",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "d",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "d",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "d",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "d",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "d",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "d",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "i",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "d",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "d",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "d",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "(",
+                "<CR>",
+                "v",
+                "i",
+                ")"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "v",
+                "i",
+                ")"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "(",
+                "<CR>",
+                "v",
+                "a",
+                ")"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "a",
+                "p"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "(",
+                "<CR>",
+                "v",
+                "a",
+                ")"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "v",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "a",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "v",
+                "a",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "{",
+                "<CR>",
+                "v",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "b"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "{",
+                "<CR>",
+                "v",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "v",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "a",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "v",
+                "a",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "\"",
+                "<CR>",
+                "v",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "o"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "\"",
+                "<CR>",
+                "v",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "v",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "i",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "v",
+                "i",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "l",
+                "?",
+                "`",
+                "<CR>",
+                "v",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "a",
+                "q"
+            ],
+            "after": [
+                "m",
+                "x",
+                "/",
+                "`",
+                "<CR>",
+                "v",
+                "a",
+                "`"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "x"
+            ],
+            "after": [
+                "<Esc>",
+                // "`",
+                // "x"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "l"
+            ],
+            "after": [
+                "/",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "h"
+            ],
+            "after": [
+                "h",
+                "?",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                ",",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "0",
+                "p"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ","
+            ],
+            "after": [
+                "m",
+                "x",
+                "$",
+                "x",
+                "a",
+                ",",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ";"
+            ],
+            "after": [
+                "m",
+                "x",
+                "$",
+                "a",
+                ";",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d",
+                "k",
+                "o"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "z",
+                "x"
+            ],
+            "after": [
+                "<Esc>",
+                // "`",
+                // "x"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "f"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "n"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "z"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "l"
+            ],
+            "after": [
+                "<Esc>",
+                "/",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "h"
+            ],
+            "after": [
+                "<Esc>",
+                "h",
+                "?",
+                "(",
+                "<CR>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ","
+            ],
+            "after": [
+                "<Esc>",
+                "m",
+                "x",
+                "$",
+                "x",
+                "a",
+                ",",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                ";"
+            ],
+            "after": [
+                "<Esc>",
+                "m",
+                "x",
+                "$",
+                "a",
+                ";",
+                "<Esc>",
+                "`",
+                "x",
+                "<Esc>"
+            ]
+        }
+        
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#8FBCBB",
+        "#434C5E"
+    ],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "statusBar.foreground": "#434C5E"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.enablePreview": false,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    }
+}
