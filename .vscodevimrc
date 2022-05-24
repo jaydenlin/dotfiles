@@ -1,0 +1,170 @@
+:set showmode
+:set surround
+:set multiple-cursors
+:set easymotion
+:set relativenumber
+:set number
+":set clipboard+=unnamed
+:set nofoldenable  
+
+"Move
+nmap <S-h> b
+vmap <S-h> b
+nmap <S-l> w
+vmap <S-l> w
+nmap <S-j> 10j
+vmap <S-j> 10j
+nmap <S-k> 10k
+vmap <S-k> 10k
+
+nmap q mx/"<CR>l
+nmap Q mxh?"<CR>l
+nmap p mx/(<CR>l
+nmap P mxh?(<CR>l
+nmap n mxl/<Space><CR>h
+nmap N mxh?<Space><CR>l
+nmap , mx/,<CR>w
+nmap < mx?,<CR>b
+nmap . mxl/\.<CR>l
+nmap > mxh?\.<CR>l
+nmap 0 mx_
+
+"Edit Util
+nmap z; mx$a;<Esc>`x<Esc>
+imap z; <Esc>mx$a;<Esc>`x
+nmap z, mx$xa,<Esc>`x<Esc>
+imap z, <Esc>mx$xa,<Esc>`x
+
+"Visual Util
+vmap P mxo?(<CR>o
+vmap p mx/)<CR>
+vmap B mxo?{<CR>o
+vmap b mx/}<CR>
+vnoremap 0 mxo_o 
+vnoremap n mxl/<Space><CR>h
+vnoremap N mxoh?<Space><CR>lo
+vnoremap , mxl/,<CR>h
+vnoremap ; mx/;<CR>
+vnoremap w iw
+vnoremap < mxoh?,<CR>lo
+vnoremap . mxl/\.<CR>h
+vnoremap <S-.> mxoh?\.<CR>lo
+
+
+nmap caaq mx/"<CR>ca"
+nmap caq mxl?"<CR>ca"
+nmap ciiq mx/"<CR>ci"
+nmap ciq mxl?"<CR>ci"
+"nmap caaq mx/'<CR>ca'
+"nmap caq mxl?'<CR>ca'
+"nmap ciiq mx/'<CR>ci'
+"nmap ciq mxl?'<CR>ci'
+nmap caab mx/{<CR>ca{
+nmap cab mxl?{<CR>ca{
+nmap ciib mx/{<CR>ci{
+nmap cib mxl?{<CR>ci{
+nmap cau mxl?[<CR>ca[
+nmap caau mx/[<CR>ca[
+nmap ciiu mx/[<CR>ci[
+nmap ciu mxl?[<CR>ci[
+"nmap cfo cf"
+"nmap cto ct"
+nmap ciip mx/(<CR>ci(
+nmap cip mxl?(<CR>ci(
+nmap caap mx/(<CR>ca(
+nmap cap mxl?(<CR>ca(
+nmap daap mx/(<CR>da(
+nmap dap mxl?(<CR>da(
+nmap diip mx/(<CR>di(
+nmap dip mxl?(<CR>di(
+nmap daaq mx/"<CR>da"
+nmap daq mxl?"<CR>da"
+nmap diiq mx/"<CR>di"
+nmap diq mxl?"<CR>di"
+nmap daab mx/{<CR>da{
+nmap dab mxl?{<CR>da
+nmap diib mx/{<CR>di{
+nmap dib mxl?{<CR>di{
+nmap viip mx/(<CR>vi)
+nmap vip mxl?(<CR>vi)
+nmap viiq mx/"<CR>vi"
+nmap viq mxl?"<CR>vi"
+nmap viip mx/(<CR>vi)
+nmap vip mxl?(<CR>vi)
+"nmap viiq mx/'<CR>vi'
+"nmap viq mxl?'<CR>vi'
+nmap vaaq mx/"<CR>va"
+nmap vaq mxl?"<CR>va"
+"nmap vaaq mx/'<CR>va'
+"nmap vaq mxl?'<CR>va'
+nmap vaap mx/(<CR>va)
+nmap vap mxl?(<CR>va)
+nmap viib mx/{<CR>vi{
+nmap vib mxl?{<CR>vi{
+nmap vaab mx/{<CR>va{
+nmap vab mxl?{<CR>va{
+
+nmap zx <Esc>`x
+vmap zx <Esc>`x 
+imap zx <Esc>`x
+
+
+:imap jj <Esc>
+:imap zz <Esc>
+:vmap zz <Esc>
+:nmap <BS> a<BS>
+":nmap zh ^
+":nmap hh ^
+":imap zh <Esc>^i
+":nmap zl $
+":nmap ll $
+":imap zl <End>
+":imap zd <Esc>ddjo
+":nmap zd ddjo
+"nmap qq ZQ
+:nmap <BS> a<BS>
+
+"Test
+imap <F1> <Esc>mby?@Test<CR>`bp?void<CR>w
+nmap <F1> mby?@Test<CR>`bp?void<CR>w
+
+imap <F2> <Esc>mby?def<CR>`bp?def<CR>f"w
+nmap <F2> mby?def<CR>`bp?def<CR>f"w
+
+nmap zf 0f(h
+imap zf <Esc>0f(h
+nmap ze /\u<CR>hvbc
+vmap ze b<Esc>/\u<CR>hvbc
+imap ze <Esc>/\u<CR>hvbc
+nmap ztc gg/public <CR>
+imap ztc <Esc>?public class<CR>
+nmap zta ?@Autowired<CR>k
+imap zta <Esc>?@Autowired<CR>k
+
+
+"Mark
+nmap z0 mx
+imap z0 <Esc>mx
+nmap z00 `x
+imap z00 <Esc>`x
+
+nmap z1 ma
+imap z1 <Esc>ma
+nmap z11 `a
+imap z11 <Esc>`a
+
+nmap z2 mb
+imap z2 <Esc>mb
+nmap z22 `b
+imap z22 <Esc>`b
+
+nmap z3 mc
+imap z3 <Esc>mc
+nmap z33 `c
+imap z33 <Esc>`c
+
+"Remap
+:nnoremap j k
+:nnoremap k j
+:vnoremap j k
+:vnoremap k j
