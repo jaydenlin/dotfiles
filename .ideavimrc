@@ -5,7 +5,7 @@
 :set relativenumber
 :set number
 ":set clipboard+=unnamed
-:set nofoldenable  
+:set nofoldenable
 
 "Move
 nmap <S-h> b
@@ -26,7 +26,7 @@ nmap N mxh?<Space><CR>l
 nmap , mx/,<CR>w
 nmap < mx?,<CR>b
 nmap . mxl/\.<CR>l
-nmap <S-.> mxh?\.<CR>l
+nmap > mxh?\.<CR>l
 nmap 0 mx_
 
 "Edit Util
@@ -41,7 +41,7 @@ vmap P mxo?(<CR>o
 vmap p mx/)<CR>
 vmap B mxo?{<CR>o
 vmap b mx/}<CR>
-vnoremap 0 mxo_o 
+vnoremap 0 mxo_o
 vnoremap n mxl/<Space><CR>h
 vnoremap N mxoh?<Space><CR>lo
 vnoremap , mxl/,<CR>h
@@ -49,7 +49,7 @@ vnoremap ; mx/;<CR>
 vnoremap w iw
 vnoremap < mxoh?,<CR>lo
 vnoremap . mxl/\.<CR>h
-vnoremap <S-.> mxoh?\.<CR>lo
+vnoremap > mxoh?\.<CR>lo
 
 
 nmap caaq mx/"<CR>ca"
@@ -88,10 +88,6 @@ nmap diib mx/{<CR>di{
 nmap dib mxl?{<CR>di{
 nmap viip mx/(<CR>vi)
 nmap vip mxl?(<CR>vi)
-nmap viiq mx/"<CR>vi"
-nmap viq mxl?"<CR>vi"
-nmap viip mx/(<CR>vi)
-nmap vip mxl?(<CR>vi)
 "nmap viiq mx/'<CR>vi'
 "nmap viq mxl?'<CR>vi'
 nmap vaaq mx/"<CR>va"
@@ -106,7 +102,7 @@ nmap vaab mx/{<CR>va{
 nmap vab mxl?{<CR>va{
 
 nmap zx <Esc>`x
-vmap zx <Esc>`x 
+vmap zx <Esc>`x
 imap zx <Esc>`x
 
 
@@ -176,8 +172,12 @@ vmap zrm :action ReplaceMethodWithMethodObject<CR>
 vmap M :action ExtractMethod<CR>
 vmap R :action SurroundWith<CR>
 :vmap \s :action SurroundWith<CR>
-map zrt :action SearchEverywhere<CR>
-imap zrt <Esc>:action SearchEverywhere<CR>
+"map zrt :action SearchEverywhere<CR>
+"imap zrt <Esc>:action SearchEverywhere<CR>
+map zru :action MembersPullUp<CR>
+imap zru <Esc>:action MembersPullUp<CR>
+map zrd :action MemberPushDown<CR>
+imap zrd <Esc>:action MemberPushDown<CR>
 
 map <C-D> :action EditorDuplicateLines<CR>
 imap <C-D> <Esc>:action EditorDuplicateLines<CR>
@@ -187,36 +187,5 @@ map <C-A-J> :action MoveLineDown<CR>:action VimAutoIndentLines<CR>
 imap <C-A-J> <Esc>:action MoveLineDown<CR>:action VimAutoIndentLines<CR>
 map <A-D> :action EditorDeleteLine<CR>
 imap <A-D> <Esc>:action EditorDeleteLine<CR>
-nmap <A-u> :redo<CR>
-
-
-nmap <Space> :action AceAction<CR>
-"nmap <Space> <leader><leader>s :action KJumpAction 
-"nmap <C-\> :action AceTargetAction<CR>
-
-"Mark
-nmap z0 mx
-imap z0 <Esc>mx
-nmap z00 `x
-imap z00 <Esc>`x
-
-nmap z1 ma
-imap z1 <Esc>ma
-nmap z11 `a
-imap z11 <Esc>`a
-
-nmap z2 mb
-imap z2 <Esc>mb
-nmap z22 `b
-imap z22 <Esc>`b
-
-nmap z3 mc
-imap z3 <Esc>mc
-nmap z33 `c
-imap z33 <Esc>`c
-
-"Remap
-:nnoremap j k
-:nnoremap k j
-:vnoremap j k
-:vnoremap k j
+nmap <A-u> :redo<CR>  
+  
